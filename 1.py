@@ -54,7 +54,7 @@ model.compile(optimizer=optimizer,
               metrics=['accuracy'])
 
 # train model
-history = model.fit(x_train, y_train_b, epochs=5, batch_size=4, verbose=1)
+history = model.fit(x_train, y_train_b, epochs=5, batch_size=4)
 
 # testing model with test data set
 y_pred = (model.predict(x_test) >= 0.5).astype(int)
